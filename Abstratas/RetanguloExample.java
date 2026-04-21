@@ -45,7 +45,7 @@ class Retangulo extends FiguraGeometrica {
    }
 }
 
-public class MainTest {
+public class RetanguloExample {
    public static void main(String args[]) {
 
       Retangulo r = new Retangulo(15, 4);
