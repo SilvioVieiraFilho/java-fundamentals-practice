@@ -1,4 +1,4 @@
-public class Caixa<T> {
+public class CaixaGenerica<T> {
 
     private T[] elementos;
 
@@ -22,7 +22,7 @@ public class Caixa<T> {
 
     public static void main(String[] args) {
         // Criando uma CaixaDePreços para Double
-        Caixa<Double> caixaDePrecos = new Caixa<>(3);
+        CaixaGenerica<Double> caixaDePrecos = new CaixaGenerica<>(3);
         caixaDePrecos.adicionar(10.5, 0);
         caixaDePrecos.adicionar(20.0, 1);
         System.out.println("Preço 1: " + caixaDePrecos.obter(0)); // Saída: 10.5

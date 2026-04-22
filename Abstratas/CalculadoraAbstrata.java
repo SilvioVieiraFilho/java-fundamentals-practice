@@ -66,7 +66,7 @@ public double calcular(double n1 , double n2 ){
 }
 
 
-public class Calculadora{
+public class CalculadoraAbstrata{
 public static void main (String args[]){
 
 
