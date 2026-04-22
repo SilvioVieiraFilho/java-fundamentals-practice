@@ -23,20 +23,20 @@ public class ManipulacaoDeArquivos {
 
     public void lerDoArquivo(String nomeArquivo) {
 
+        StringBuilder conteudo = new StringBuilder();
+
         try {
 
-            FileReader reader = new FileReader(nomeArquivo);
+            BufferedReader reader = new BufferedReader(new FileReader(nomeArquivo));
 
-            int data = reader.read();
+            String data;
 
-            while (data != -1) {
+            while ((data = reader.readLine()) != null) {
 
-                System.out.print((char) data);
+                System.out.println(conteudo.append(data).append("\n"));
 
-                data = reader.read();
             }
 
-            reader.close();
         } catch (IOException e) {
 
             System.out.println("Problemas de IO: " + e.getMessage());
